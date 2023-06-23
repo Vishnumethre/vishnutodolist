@@ -1,16 +1,17 @@
 
 
-<b>MY TODO List</b>
 <div class="container">
   <div class="row">
     <div class="col-xs-2 col-sm-0 col-md-6 col-sm-offset-1 col-md-offset-2"> 
     <div class="center">
- <input type="text" placeholder="Enter your task" class="form-control" #f>
+<h3 style="margin-top: 120px;"><b>MY TODO List</b></h3>
+<br>
+ <input type="text" placeholder="Enter your task..." class="form-control" #f>
  <span><button class="btn btn-danger" (click)="addTolist(f.value)"  style="   line-height: 26px;
   width: 75px;
   font-size: 8pt;
   font-family: tahoma;
-  margin-top: 25px;
+  margin-top: 186px;
   margin-right: 800px;
   position:absolute;
   top:0;
@@ -25,16 +26,16 @@
 <div class="col-xs-2 col-sm-0 col-md-6 col-sm-offset-1 col-md-offset-2"> 
 <div class="list-container">
   <ul class="list-group" *ngFor="let item of Todolists; let i=index">
-    <li class="list-group-item list-group-item-warning" (click)="completed(i)" >{{item}} 
+    <li class="list-group-item list-group-item-warning" style="margin-top: 20px;"    (click)="completed(i)" >{{item}} 
       <div >
         <span >
 
-          <button class="btn btn-danger" style="   line-height: 22px;
+          <button class="btn btn-danger" style="   line-height: 24px;
           width: 50px;
           font-size: 8pt;
           font-family: tahoma;
-          margin-top: 1px;
-          margin-right: 60px;
+          margin-top: 0px;
+          margin-right: 2px;
           position:absolute;
           top:0;
           right:0;" (click)="remove(i)">
@@ -53,7 +54,15 @@
 </div>
 </div>
 </div>
-<button class="btn btn-primary" (click)="enable()">Show Pendinglist</button>
+<button class="btn btn-primary" (click)="enable()"  style="   line-height: 22px;
+width: 250px;
+font-size: 8pt;
+font-family: tahoma;
+margin-top: 186px;
+margin-right: 260px;
+position:absolute;
+top:0;
+right:0;"><b>Show Pendinglist</b></button>
 <div class="container">
   <div class="row">
 <div class="col-xs-2 col-sm-0 col-md-6 col-sm-offset-1 col-md-offset-2"> 
